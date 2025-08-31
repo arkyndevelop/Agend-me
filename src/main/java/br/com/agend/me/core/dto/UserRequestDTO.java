@@ -24,7 +24,7 @@ public interface UserRequestDTO {
 
     @NotBlank(message = "Campo telefone não pode ser vazio!")
     @Size(max = 14)
-    String telephone();
+    String cellphone();
 
     @NotBlank(message = "Campo senha não pode ser vazio!")
     @Size(min = 8)

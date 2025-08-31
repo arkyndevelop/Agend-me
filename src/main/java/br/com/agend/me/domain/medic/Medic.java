@@ -25,8 +25,10 @@ public class Medic extends User {
     @Column(nullable = false, unique = true, name = "MEDIC_CRM")
     private Integer medic_crm;
 
+    @Column(nullable = false, name = "SPECIALTY")
+    private String specialty;
+
     public Medic(String name, String cpf, String email, String cellphone, String password, Instant dateRegister) {
         super(name, cpf, email, cellphone, password, dateRegister);
     }
-
 }
